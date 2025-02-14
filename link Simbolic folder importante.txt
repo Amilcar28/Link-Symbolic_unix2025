@@ -1,0 +1,28 @@
+link Simbolic folder
+
+ln -s /mnt/d/DATA ~/MyFolder_Link
+
+ln -s /mnt/d/DATA ~/mnt/c/Users/Amilcar/Downloads
+
+#Link pasta ou link simbolico#
+ln -s '/mnt/c/Users/Amílcar José/climatechange' '/mnt/c/Users/Amílcar José/Data'
+
+# Link DE SIMBOLIC FOLDR EXTERNAL HARD DISK #
+
+ln -s '/home/linuxjosea/ajmeteo/' '/mnt/d/DATA'
+ln -s '/home/linuxjosea/ajmeteo/' '/mnt/d/DATA'
+
+# Como acessar a pasta do disco duro no Linux #
+
+sudo mount -t drvfs D: /mnt/d
+
+
+
+Montar Disco externo(hard disk external)
+lsblk
+sudo fdisk -l
+sudo mkdir -p /mnt/external
+sudo mount /dev/sdX /mnt/external
+
+
+
