@@ -1,7 +1,20 @@
-link Simbolic folder
+link Simbolic (ln -s) folder in LINUX 2025
+
+
+# Como acessar a pasta do disco duro no Linux #
+1. lsblk - serve para verificar os discos externo
+
+#Antes de acessar o disco voce deve criar um ponto para poder acessa-ló
+1.1 - sudo mkdir -p /mnt/d 
+
+# Só depois é que estará disponivel para acessar as pasta do disco externo 
+2. sudo mount -t drvfs D: /mnt/d
+
+#EXEMPLO DE COMO CRIAR LINK SIMBOLICO ABAIXO
+
+ln -s /mnt/d/data_indices /home/amilcarjose/Data > Exemplo correcto a ideia é primeiro pôr o caminho da pasta do disco externo e depois o do HOME.
 
 ln -s /mnt/d/DATA ~/MyFolder_Link
-
 ln -s /mnt/d/DATA ~/mnt/c/Users/Amilcar/Downloads
 
 #Link pasta ou link simbolico#
@@ -12,11 +25,11 @@ ln -s '/mnt/c/Users/Amílcar José/climatechange' '/mnt/c/Users/Amílcar José/D
 ln -s '/home/linuxjosea/ajmeteo/' '/mnt/d/DATA'
 ln -s '/home/linuxjosea/ajmeteo/' '/mnt/d/DATA'
 
+
+
 # Como acessar a pasta do disco duro no Linux #
 
 sudo mount -t drvfs D: /mnt/d
-
-
 
 Montar Disco externo(hard disk external)
 lsblk
